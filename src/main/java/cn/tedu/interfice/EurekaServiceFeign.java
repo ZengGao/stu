@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @FeignClient(value="provider-user")
 public interface EurekaServiceFeign {
 	
+	
 	@RequestMapping("/hello/{name}")
 	public String hello(@PathVariable("name") String name);
 }

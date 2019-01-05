@@ -13,7 +13,7 @@ import cn.tedu.interfice.EurekaServiceFeign;
 public class FeignController {
 	@Autowired
 	private EurekaServiceFeign eurekaServiceFeign;
-	
+	String aa;
 	@RequestMapping("/hello/{name}")
 	@HystrixCommand(fallbackMethod="hellofllback")
 	public String HelloConsumer(@PathVariable String name) {
